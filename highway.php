@@ -1,4 +1,6 @@
 <?php
+require_once 'vehicle.php';
+
 abstract class HighWay
 {
     private array $currentVehicle;
@@ -43,4 +45,24 @@ abstract class HighWay
     }
     
     abstract public function addVehicule(Vehicle $vehicle);
+
+    /**
+     * Get the value of currentVehicle
+     */ 
+    public function getCurrentVehicle()
+    {
+        return $this->currentVehicle;
+    }
+
+    /**
+     * Set the value of currentVehicle
+     *
+     * @return  self
+     */ 
+    public function setCurrentVehicle($currentVehicle)
+    {
+        $this->currentVehicle = $currentVehicle;
+
+        return $this;
+    }
 }

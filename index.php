@@ -9,6 +9,8 @@ require_once 'highway.php';
 require_once 'motorway.php';
 require_once 'pedestrianWay.php';
 require_once 'residentialWay.php';
+require_once 'skateboard.php';
+require_once 'interfaces.php';
 
 /* //Bicycle
 $bicycle = new Bicycle('blue', 1);
@@ -33,7 +35,7 @@ echo $truck->isFull(); */
 
 ///======TEST POO4======///
 
-$bolide = new Car('blue', 2);
+$bolide = new Car('blue', 2, 'fuel');
 
 echo 'Test capture erreur sans le frein à main et sans capture d\'erreur :';
 var_dump($bolide);

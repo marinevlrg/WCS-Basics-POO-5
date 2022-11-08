@@ -23,10 +23,14 @@
       }
       public function switchOn(): bool
       {
-        if ($currentSpeed >= 10) {
+        if ($this->getCurrentSpeed() >= 10) {
           return $this->true;
         } else {
           return $this->false;
         }
+      }
+      public function switchOff(): bool
+      {
+        return false;
       }
     }
